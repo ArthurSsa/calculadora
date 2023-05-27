@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+
+.background{
+background-color:rgb(39, 39, 39)
+
+}
+
+    .estrutura {
+background-color: #000000;
+height:490px;
+width: 330px;
+border-radius: 30px;
+position: relative;
+left: 500px;
+bottom: 10px;
+}
+
+.display {
+  background-color: #000000;
+  font-size: 30px;
+  height: 100px;
+  line-height: 150px;
+  width: 230px;
+  margin-top: 40px;
+  margin-bottom: -100px;
+  text-align: right;
+  padding: 0 10px;
+  margin-left: 30px;
+  position: relative;
+  color: white;
+  align-items: end;
+  border-radius: 30px;
+}
+
+.flex-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 100px;
+position: relative;
+right: 360px;
+top: 90px;
+}
+
+.flex-column-container {
+display: flex;
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+position: relative;
+left: 560px;
+}
+
+.column {
+height: 60px;
+width: 60px;
+margin-top: 215px;
+margin-left: 10px;
+display: flex;
+border-radius: 30px;
+position:relative;
+left: 200px;
+align-items: center;
+justify-content: center;
+color: white;
+background-color: rgb(22, 22, 22);
+border-color: rgb(255, 255, 255);
+}
+.column2 {
+height: 60px;
+width: 60px;
+display: flex;
+margin-top: 75px;
+margin-left: 10px;
+border-radius: 30px;
+position:relative;
+left: -10px;
+align-items: center;
+justify-content: center;
+color: white;
+background-color: rgb(22, 22, 22);
+border-color: rgb(255, 255, 255);
+}
+.column3{
+height: 60px;
+width: 60px;
+display: flex;
+margin-top: -60px;
+margin-left: 10px;
+border-radius: 30px;
+position:relative;
+right: 220px;
+align-items: center;
+justify-content: center;
+color: white;
+background-color: rgb(22, 22, 22);
+border-color: rgb(255, 255, 255);
+}
+
+.column4{
+height: 60px;
+width: 60px;
+display: flex;
+border-radius: 30px;
+position:relative;
+align-items: center;
+justify-content: center;
+color: white;
+background-color: rgb(22, 22, 22);
+border-color: rgb(255, 255, 255);
+margin-right: -620px;
+right: 280px;
+top: 178px;
+}
+
+.column5{
+height: 60px;
+width: 60px;
+border-radius: 30px;
+align-items: center;
+justify-content: center;
+color: white;
+background-color: rgb(22, 22, 22);
+border-color: rgb(255, 255, 255);
+margin-left: -385px;
+position: relative;
+left: 570px;
+top: 70px;
+margin-top: 9px
+}
+
+.linha{
+  position:relative;
+  display: flex;
+  width: 230px;
+  margin-right: 50px;
+  margin-top: 130px;
+  margin-bottom: -120px;
+  border: 1px solid rgb(87, 87, 87);
+}
+
+#limpar {
+position: relative;
+left: 140px;
+color: red;
+}
+
+#result {
+background-color: rgba(245, 245, 217, 0.808);
+color:#000000
+}
+
+#del {
+border-radius: 10px;
+position: relative;
+bottom: 350px;
+left: 541px;
+background-color: rgba(245, 245, 217, 0.808);
+border-color: white;
+}
+  </style>
+</head>
+<body class="background">
+    <div class="calculator">
+      <div class="estrutura">
+      <div id="display" class="display"></div>
+      <hr class="linha">
+        <div class="flex-container">
+        <button class= "column4" id="number0">0</button>  
+        <button class= "column" id="number1">1</button>
+        <button class= "column" id="number2">2</button>
+        <button class= "column" id="number3">3</button>
+        <button class= "column2" id="number4">4</button>
+        <button class= "column2" id="number5">5</button>
+        <button class= "column2" id="number6">6</button>
+        <button class= "column3" id="number7">7</button>
+        <button class= "column3" id="number8">8</button>
+        <button class= "column3" id="number9">9</button>
+        <button class= "column4" id="result">=</button>
+        <button class= "column4" id="limpar">C</button>
+        <div class="flex-column-container">
+        <button class= "column5" id="sum">+</button>
+        <button class= "column5" id="minus">-</button>
+        <button class= "column5" id="multi">*</button>
+        <button class= "column5" id="divi">/</button>
+        </div>  
+      </div> 
+      </div>
+      <button id="del">CE</button>
+    </div>
+    
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
